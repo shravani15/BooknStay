@@ -1,13 +1,13 @@
 import React, {Component} from 'react';
 import { Link } from 'react-router-dom';
-import defaultImage from "../images/room-1.jpeg";
+import defaultImage from "../Images/default.jpg";
 import propTypes from 'prop-types';
 
 class Room extends Component {
     render() {
         const { name, slug, images, price } = this.props.room;
         return (
-            <>
+            <div>
             <article className="room">
                 <div className="img-container">
                 <img src={images[0] || defaultImage} alt="single room" />
@@ -21,7 +21,7 @@ class Room extends Component {
                 </div>
                 <p className="room-info">{name}</p>
             </article>
-            </>
+            </div>
         )
     }
 }

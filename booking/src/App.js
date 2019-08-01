@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Route, Switch } from "react-router-dom";
-import Home from "./Pages";
-import Rooms from "./Pages";
+import Home from "./Pages/Home";
+
 import Navbar from "./Components/Navbar";
 import './App.css';
 
@@ -13,7 +13,7 @@ class App extends Component {
         <Navbar />
         <Switch>
             <Route exact path="/" component={Home} />
-            <Route exact path="/rooms" components={Rooms} />
+            
         </Switch>
       </div>
     );
